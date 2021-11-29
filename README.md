@@ -26,6 +26,10 @@ Content for PowerShell Workshop 11/29/2021
   - Debugging
     - You can create yourself debug configs for each project. This is stored in the ```launch.json``` file in the ```.vscode``` folder.
     > You can find more information about [debugging](https://code.visualstudio.com/Docs/editor/debugging).
+    - Breakpoints can have added expressions or hit count, which makes debugging of loops much more comfortable.
+    - The watch pane is most effective way to get an overview of you variables and their content.
+    - Use the call stack that shows you the path to the current breakpoint in your code. You can easily navigate back to the part of the code that called the code you are currently having the breakpoint in.
+    - Remote debugging works in the ISE by opening a script with the command ```psEdit``` in the remote machine within a interactive session. If the workflow to start the script remotely is more complex, you can use the cmdlet ```Wait-Debugger``` to halt the process and attache to it with ```Enter-PSHostProcess```. You need to know the process ID which is reflected by the variable ```$PID```.
   - Git Integration
 -	Advanced Functions
 -	Performance
