@@ -23,8 +23,9 @@ Content for PowerShell Workshop 11/29/2021
     - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
   - Config
     - Each VSCode project can have it own settings when storing them in the file ```settings.json``` which must be in the ```.vscode``` folder. These settings may contain code style settings and settings for extensions.
-    
   - Debugging
+    - You can create yourself debug configs for each project. This is stored in the ```launch.json``` file in the ```.vscode``` folder.
+    > You can find more information about [debugging](https://code.visualstudio.com/Docs/editor/debugging).
   - Git Integration
 -	Advanced Functions
 -	Performance
