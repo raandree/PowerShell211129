@@ -67,3 +67,4 @@ Useful Links and Resources
  - [Everything you want to know about...](https://powershellexplained.com/)
  - [ValueFromPipeline and ValueFromPipelineByPropertyName explained](https://learn-powershell.net/2013/05/07/tips-on-implementing-pipeline-support/)
  - [PowerShell.one](https://powershell.one/)
+ - [PowerShell training material](https://github.com/raandree/PowerShellTraining) that explains functions and modules
