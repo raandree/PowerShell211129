@@ -6,6 +6,7 @@ Content for PowerShell Workshop 11/29/2021
 - Git
   - Requirements and Installation
   - Markdown
+  - blabla
 - [Azure DevOps Server](https://azure.microsoft.com/en-us/services/devops/server/)
   - This product is the equivalent to GitHub or Azure DevOps Service but on-prem.
   - Main features for PowerShell Developers is:
