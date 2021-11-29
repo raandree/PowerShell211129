@@ -6,6 +6,7 @@ Content for PowerShell Workshop 11/29/2021
 -	Git
     - Requirements and Installation
     - Markdown
+    - blabla
 -	VSCode
     - Config
     - Extensions
