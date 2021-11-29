@@ -3,24 +3,29 @@ Content for PowerShell Workshop 11/29/2021
 
 ## Agenda
 
--	Git
-    - Requirements and Installation
-    - Markdown
--	VSCode
-    - Config
-    - Extensions
-    - Debugging
-    - Git Integration
+- Git
+  - Requirements and Installation
+  - Markdown
+- [Azure DevOps Server](https://azure.microsoft.com/en-us/services/devops/server/)
+  - This product is the equivalent to GitHub or Azure DevOps Service but on-prem.
+  - Main features for PowerShell Developers is:
+    - Repo to store and version your code
+    - Artifact feed based on NuGet to publish scripts and modules.
+- VSCode
+  - Extensions
+  - Config
+  - Debugging
+  - Git Integration
 -	Advanced Functions
 -	Performance
-    - Remoting, Remote persistent sessions
+  - Remoting, Remote persistent sessions
 -	Asynchronous routines
 -	RESTApi
 -	PSFramework
 -	NTFSSecurity
 -	Splatting
 -	SQL für Config Daten und Logging
-    - dbatools
+  - dbatools
 -	Yaml
 -	Regular Expressions
 -	JEA
