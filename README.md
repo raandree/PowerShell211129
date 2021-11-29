@@ -6,15 +6,24 @@ Content for PowerShell Workshop 11/29/2021
 - Git
   - Requirements and Installation
   - Markdown
-  - blabla
 - [Azure DevOps Server](https://azure.microsoft.com/en-us/services/devops/server/)
   - This product is the equivalent to GitHub or Azure DevOps Service but on-prem.
   - Main features for PowerShell Developers is:
     - Repo to store and version your code
     - Artifact feed based on NuGet to publish scripts and modules.
 - VSCode
+  - **Keep in mind the ```F1``` shortcut which give you access to literally every command.**  
   - Extensions
+    > Note: You can automatically install extensions into VSCode by calling ```code --install-extension <path>```
+    - [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
+    - [GitLense](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+    - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+    - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+    - [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+    - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
   - Config
+    - Each VSCode project can have it own settings when storing them in the file ```settings.json``` which must be in the ```.vscode``` folder. These settings may contain code style settings and settings for extensions.
+    
   - Debugging
   - Git Integration
 -	Advanced Functions
