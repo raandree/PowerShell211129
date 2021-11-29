@@ -43,7 +43,10 @@ Content for PowerShell Workshop 11/29/2021
     - Remote debugging works in the ISE by opening a script with the command ```psEdit``` in the remote machine within a interactive session. If the workflow to start the script remotely is more complex, you can use the cmdlet ```Wait-Debugger``` to halt the process and attache to it with ```Enter-PSHostProcess```. You need to know the process ID which is reflected by the variable ```$PID```.
   - Git Integration
     A simple Git implementation is built into VSCode by default. The extension [GitLense](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) additionally gives you a graphical file and commit history.
+- Coding best practices
+  - The DSC Community's coding [style guideline](https://dsccommunity.org/styleguidelines/).
 -	Advanced Functions
+
 -	Performance
   - Remoting, Remote persistent sessions
 -	Asynchronous routines
@@ -54,6 +57,13 @@ Content for PowerShell Workshop 11/29/2021
 -	SQL für Config Daten und Logging
   - dbatools
 -	Yaml
+- Pester
 -	Regular Expressions
 -	JEA
 -	GUI und Universal Dashboard (Web UI)
+
+
+Useful Links and Resources
+ - [Everything you want to know about...](https://powershellexplained.com/)
+ - [ValueFromPipeline and ValueFromPipelineByPropertyName explained](https://learn-powershell.net/2013/05/07/tips-on-implementing-pipeline-support/)
+ - [PowerShell.one](https://powershell.one/)
