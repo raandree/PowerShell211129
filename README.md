@@ -4,8 +4,19 @@ Content for PowerShell Workshop 11/29/2021
 ## Agenda
 
 - Git
-  - Requirements and Installation
+  - Requirements to get started:
+    - Download git from https://git-scm.com/downloads
+    - Create a repository on GitHub
+    - Clone the repository in VSCode using the command 'git clone'
+    - The command ```git remote -v``` returns the origin of the repo, indicating that it has been cloned from GigHub
+
+    If you want to work with git offline without connecting to GitHUb or any other cloud based source control system.
+    - Create a folder
+    - In PowerShell navigate to the newly created folder
+    - type ```git init``` which create the hidden ```.git``` folder is in fact the git database.
+    - The command ```git remote -v``` returns the nothing, indicating that the folder does not have a remote source.
   - Markdown
+    Is the ideal and simple way to document source code or any other tool or process. An introduction can be found on [Markdown Guide](https://www.markdownguide.org).
 - [Azure DevOps Server](https://azure.microsoft.com/en-us/services/devops/server/)
   - This product is the equivalent to GitHub or Azure DevOps Service but on-prem.
   - Main features for PowerShell Developers is:
@@ -31,6 +42,7 @@ Content for PowerShell Workshop 11/29/2021
     - Use the call stack that shows you the path to the current breakpoint in your code. You can easily navigate back to the part of the code that called the code you are currently having the breakpoint in.
     - Remote debugging works in the ISE by opening a script with the command ```psEdit``` in the remote machine within a interactive session. If the workflow to start the script remotely is more complex, you can use the cmdlet ```Wait-Debugger``` to halt the process and attache to it with ```Enter-PSHostProcess```. You need to know the process ID which is reflected by the variable ```$PID```.
   - Git Integration
+    A simple Git implementation is built into VSCode by default. The extension [GitLense](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) additionally gives you a graphical file and commit history.
 -	Advanced Functions
 -	Performance
   - Remoting, Remote persistent sessions
@@ -45,19 +57,3 @@ Content for PowerShell Workshop 11/29/2021
 -	Regular Expressions
 -	JEA
 -	GUI und Universal Dashboard (Web UI)
-
----
-
-## Git
-
-Requirements to get started:
-- Download git from https://git-scm.com/downloads
-- Create a repository on GitHub
-- Clone the repository in VSCode using the command 'git clone'
-- The command ```git remote -v``` returns the origin of the repo, indicating that it has been cloned from GigHub
-
-If you want to work with git offline without connecting to GitHUb or any other cloud based source control system.
-- Create a folder
-- In PowerShell navigate to the newly created folder
-- type ```git init``` which create the hidden ```.git``` folder is in fact the git database.
-- The command ```git remote -v``` returns the nothing, indicating that the folder does not have a remote source.
