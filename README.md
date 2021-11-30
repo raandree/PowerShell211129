@@ -3,10 +3,7 @@ Content for PowerShell Workshop 11/29/2021
 
 ## Agenda
 
-
 > Note: geforktes Repo
-
-
 
 - Git
   - Requirements to get started:
