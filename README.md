@@ -48,13 +48,17 @@ Content for PowerShell Workshop 11/29/2021
 -	Advanced Functions
   Covered by going through content of [PowerShell training material](https://github.com/raandree/PowerShellTraining).
 
--	Performance
+-	Local Performance
   A demo of local performance optimization is in [Performance, Jobs and Threading.ps1](./Misc/Performance,%20Jobs%20and%20Threading.ps1)
   The modules used are:
-  - [SplitPipeline](https://www.powershellgallery.com/packages/SplitPipeline/1.6.2)
-  - [ThreadJob](https://www.powershellgallery.com/packages/ThreadJob/2.0.3)
-  - 
-  - Remoting, Remote persistent sessions
+    - [SplitPipeline](https://www.powershellgallery.com/packages/SplitPipeline/1.6.2)
+    - [ThreadJob](https://www.powershellgallery.com/packages/ThreadJob/2.0.3)
+- Remoting performance
+  Remoting by default works with 32 'threads' and does not require a ForEach loop. Sometimes persistent (New-PSSession) sessions are useful as creating the session may
+  take longer as the piece of work to do on the remote machine. Demos are stored in [Remote Performance optimization and hints.ps1](./Misc/Remote%20Performance%20optimization%20and%20hints.ps1).
+
+  > Note: The custom functions are part of [AutomatedLab.Common](https://www.powershellgallery.com/packages/AutomatedLab.Common/2.1.223) but work independently (can be copied into your own modules).
+
 - Remoting
   - Double Hop
 -	Asynchronous routines
