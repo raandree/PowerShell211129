@@ -46,9 +46,17 @@ Content for PowerShell Workshop 11/29/2021
 - Coding best practices
   - The DSC Community's coding [style guideline](https://dsccommunity.org/styleguidelines/).
 -	Advanced Functions
+  Covered by going through content of [PowerShell training material](https://github.com/raandree/PowerShellTraining).
 
 -	Performance
+  A demo of local performance optimization is in [Performance, Jobs and Threading.ps1](./Misc/Performance,%20Jobs%20and%20Threading.ps1)
+  The modules used are:
+  - [SplitPipeline](https://www.powershellgallery.com/packages/SplitPipeline/1.6.2)
+  - [ThreadJob](https://www.powershellgallery.com/packages/ThreadJob/2.0.3)
+  - 
   - Remoting, Remote persistent sessions
+- Remoting
+  - Double Hop
 -	Asynchronous routines
 -	RESTApi
 -	PSFramework
