@@ -72,7 +72,7 @@ Content for PowerShell Workshop 11/29/2021
   - CredSsp
 
 - Comparing Object
-  PowerShell does not compare object, it doesn't even know how to do this. PowerShell just calls the Equal method on an object and delegated the comparison to the object / class. Demo of this is in [Compare Object C# Operator Definition.ps1](./Misc/Compare%20Object%20C#%20Operator%20Definition.ps1).
+  PowerShell does not compare object, it doesn't even know how to do this. PowerShell just calls the Equal method on an object and delegated the comparison to the object / class. Demo of this is in [Compare Object CSharp Operator Definition.ps1](./Misc/Compare%20Object%20CSharp%20Operator%20Definition.ps1).
 
   The FileInfo class does not have the equal operator implemented, hence comparing [FileInfo class](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileinfo?view=net-6.0) object always returns false unless it is exactly the same object. In this case we do a reference-equal. The [DateTime struct](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-6.0) does have a bunch of operator and comparing two DateTime objects work by comparing their number of ticks.
 
