@@ -3,6 +3,8 @@ Content for PowerShell Workshop 11/29/2021
 
 ## Agenda
 
+> My more important note
+
 - Git
   - Requirements to get started:
     - Download git from https://git-scm.com/downloads
