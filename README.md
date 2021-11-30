@@ -76,10 +76,21 @@ Content for PowerShell Workshop 11/29/2021
 
   The FileInfo class does not have the equal operator implemented, hence comparing [FileInfo class](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileinfo?view=net-6.0) object always returns false unless it is exactly the same object. In this case we do a reference-equal. The [DateTime struct](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-6.0) does have a bunch of operator and comparing two DateTime objects work by comparing their number of ticks.
 
--	RESTApi
+- Spatting
+  One of the most helpful PowerShell language features to handle parameters in cmdlet calls if things get complex and thus complicated. More information on [Splattingand Hashtables](https://powershellexplained.com/2016-11-06-powershell-hashtable-everything-you-wanted-to-know-about/#splatting-hashtables-at-cmdlets).
+
+  Demo script is [Splatting.ps1](./Misc/Splatting.ps1) which makes use of the function [Sync-Parameter](https://github.com/AutomatedLab/AutomatedLab.Common/blob/develop/AutomatedLab.Common/Common/Public/Sync-Parameter.ps1) which removes all parameters from the parameter hashtable that the target command does not have.
+  > Note: You don't have to use the full module AutomatedLab.Common, just copy the functions or code parts needed for you projects.
+
+-	RestApi
+  The cmdlet to interact with a Rest API is Invoke-RestMethod. We have created two examples, one simple for obtaining weather data and a more complex one for retrieving the artifact feeds from Azure DevOps. Links to the APIs are on the demo scripts:
+  - [GetWeatherData.ps1](./Misc/GetWeatherData.ps1)
+  - [GetAzureDevOpsFeed.ps1](./Misc/GetAzureDevOpsFeed.ps1)
+  
+  The script 'GetAzureDevOpsFeed.ps1' uses two different authentication methods and shows the complexity that comes with using access tokens in Rest API requests.
+
 -	PSFramework
 -	NTFSSecurity
--	Splatting
 -	SQL für Config Daten und Logging
   - dbatools
 -	Yaml
