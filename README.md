@@ -49,19 +49,33 @@ Content for PowerShell Workshop 11/29/2021
   Covered by going through content of [PowerShell training material](https://github.com/raandree/PowerShellTraining).
 
 -	Local Performance
-  A demo of local performance optimization is in [Performance, Jobs and Threading.ps1](./Misc/Performance,%20Jobs%20and%20Threading.ps1)
-  The modules used are:
-    - [SplitPipeline](https://www.powershellgallery.com/packages/SplitPipeline/1.6.2)
-    - [ThreadJob](https://www.powershellgallery.com/packages/ThreadJob/2.0.3)
-- Remoting performance
-  Remoting by default works with 32 'threads' and does not require a ForEach loop. Sometimes persistent (New-PSSession) sessions are useful as creating the session may
-  take longer as the piece of work to do on the remote machine. Demos are stored in [Remote Performance optimization and hints.ps1](./Misc/Remote%20Performance%20optimization%20and%20hints.ps1).
 
-  > Note: The custom functions are part of [AutomatedLab.Common](https://www.powershellgallery.com/packages/AutomatedLab.Common/2.1.223) but work independently (can be copied into your own modules).
+    A demo of local performance optimization is in [Performance, Jobs and Threading.ps1](./Misc/Performance,%20Jobs%20and%20Threading.ps1)
+    The modules used are:
+      - [SplitPipeline](https://www.powershellgallery.com/packages/SplitPipeline/1.6.2)
+      - [ThreadJob](https://www.powershellgallery.com/packages/ThreadJob/2.0.3)
+
+    Keep in mind that extending arrays can be quite expensive. A demo is in [Array - ArrayList Performance.ps1](./Misc/Array%20-%20ArrayList%20Performance.ps1)
+
+- Remoting Performance
+  
+    Remoting by default works with 32 'threads' and does not require a ForEach loop. Sometimes persistent (New-PSSession) sessions are useful as creating the session may
+    take longer as the piece of work to do on the remote machine. Demos are stored in [Remote Performance optimization and hints.ps1](./Misc/Remote%20Performance%20optimization%20and%20hints.ps1).
+
+    > Note: The custom functions are  part of [AutomatedLab.Common]  (https://www.powershellgallery.com/ packages/AutomatedLab.Common/2.1.  223) but work independently (can  be copied into your own modules).
 
 - Remoting
-  - Double Hop
--	Asynchronous routines
+  The Double Hop issue is not caused by a security policy but by 'physical constraints'. The remote machine simply does not have any data that can be used for another authentication like a TGT or password. Hence, the remote logon can be considered as secure but in this case uncomfortable. Solutions to this issue are:
+  - Kerberos Unconstrained Delegation (not recommend, potentially unsafe)
+  - Kerberos Constrained Delegation (does not work with PowerShell Remoting)
+  - Resource Based Delegation
+  - CredSsp
+
+- Comparing Object
+  PowerShell does not compare object, it doesn't even know how to do this. PowerShell just calls the Equal method on an object and delegated the comparison to the object / class. Demo of this is in [Compare Object C# Operator Definition.ps1](./Misc/Compare%20Object%20C#%20Operator%20Definition.ps1).
+
+  The FileInfo class does not have the equal operator implemented, hence comparing [FileInfo class](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileinfo?view=net-6.0) object always returns false unless it is exactly the same object. In this case we do a reference-equal. The [DateTime struct](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-6.0) does have a bunch of operator and comparing two DateTime objects work by comparing their number of ticks.
+
 -	RESTApi
 -	PSFramework
 -	NTFSSecurity
