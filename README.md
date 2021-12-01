@@ -102,10 +102,24 @@ Content for PowerShell Workshop 11/29/2021
 
     > Note: To see this in action, have a look at the [DscWorkshop](https://github.com/dsccommunity/DscWorkshop) project. This lab for this can be created easily with [AutomatedLab](https://automatedlab.org).
 
+-	SQL 
+
+    [dbatools](https://dbatools.io/) is the ideal tool to interact with SQL data when using PowerShell. A demo  creating a new database, table and writing data into the newly created table is in the script file [SQL and  dbatools.ps1](Misc/SQL%20and%20dbatools.ps1).
+
 -	PSFramework
--	NTFSSecurity
--	SQL für Config Daten und Logging
-  - dbatools
+
+    The most interesting features of [PSFramework]  (https://psframework.org/) are managing   configuration data for modules or the   PowerShell environment in general and a very  sophisticated logging engine. A demo of the  logging features in in [PSFramework Logging.ps1] (Misc/PSFramework%20Logging.ps1)
+
+- Miscellaneous
+
+  [PSDefaultParameterValues](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_parameters_default_values?view=powershell-7.2): Help to remove redundancy in scripts (cmdlet calls and parameters). Shown in [PSDefaultParameterValues.ps1](Misc/PSDefaultParameterValues.ps1).
+
+-	NTFSSecurity3
+
+    Some demos how to use this module for   permission cleanup, backup / restore and  finding orphaned SIDs is in [NTFSSecurity.ps1] (Misc/NTFSSecurity.ps1).
+
+    > Note: The cmdlets Get- /  Set-NTFSSecurityDescriptor let you do many   actions on a single security descriptor in  memory before writing it back to disk. This can  speed up you script quite a lot.
+
 -	Yaml
 - Pester
 -	Regular Expressions
