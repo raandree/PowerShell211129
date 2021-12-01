@@ -98,7 +98,7 @@ Content for PowerShell Workshop 11/29/2021
 
 - DevOps
   
-    Brief discussion about what DevOps means and what it does not mean.   The whitepaper [The Release Pipeline Model](https://docs.microsoft. com/en-us/powershell/scripting/dsc/further-reading/whitepapers?  view=powershell-7.2) shows how a DevOps process may look like in the  Windows world.
+    Brief discussion about what DevOps means and what it does not mean.   The whitepaper [The Release Pipeline Model](https://docs.microsoft.com/en-us/powershell/scripting/dsc/further-reading/whitepapers?  view=powershell-7.2) shows how a DevOps process may look like in the  Windows world.
 
     > Note: To see this in action, have a look at the [DscWorkshop](https://github.com/dsccommunity/DscWorkshop) project. This lab for this can be created easily with [AutomatedLab](https://automatedlab.org).
 
