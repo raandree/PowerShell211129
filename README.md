@@ -94,7 +94,7 @@ Content for PowerShell Workshop 11/29/2021
     - https://community.netapp.com/t5/Software-Development-Kit-SDK-and-API-Discussions/SLM-PowerShell/td-p/133193
     - https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/credentials-with-powershell/td-p/156757
 
-    When dealing with self-signed certificates, the script [OverwriteServerCertificateValidationCallback.ps1](./Misc/OverwriteServerCertificateValidationCallback.ps1)
+    > Note: When dealing with self-signed certificates, the script [OverwriteServerCertificateValidationCallback.ps1](./Misc/OverwriteServerCertificateValidationCallback.ps1)
 
 - DevOps
   
