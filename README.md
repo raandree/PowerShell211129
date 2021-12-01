@@ -122,18 +122,25 @@ Content for PowerShell Workshop 11/29/2021
 
 -	Yaml
 
-  [Yaml](https://yaml.org/) provides less features as XML or JSON but is very easy to read also by non-IT professional. It stores like the other markup languages key-value pairs. It is very much used in the DevOps space.
+    [Yaml](https://yaml.org/) provides less   features as XML or JSON but is very easy to   read also by non-IT professional. It stores   like the other markup languages key-value   pairs. It is very much used in the DevOps space.
 
-  The PowerShell module [powershell-yaml](https://www.powershellgallery.com/packages/powershell-yaml/0.4.2) is not the best implementation but does its job most of the part.
+    The PowerShell module [powershell-yaml](https://  www.powershellgallery.com/packages/ powershell-yaml/0.4.2) is not the best   implementation but does its job most of the   part.
 
-  There is a [VSCode extensions for YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) which also checks the indentation of the content.
+    There is a [VSCode extensions for YAML](https://  marketplace.visualstudio.com/items? itemName=redhat.vscode-yaml) which also checks   the indentation of the content.
 
-  Sample data is provided in the file [SomeData.yml](Misc/Yaml.ps1).
+    Sample data is provided in the file [SomeData.  yml](Misc/Yaml.ps1).
   
 - Pester
+
+  
+
 -	Regular Expressions
--	JEA
--	GUI und Universal Dashboard (Web UI)
+
+    Best helper / editor available is [Regex101](https://regex101.com/)
+
+- Maybe for the next time
+  -	JEA
+  -	GUI und Universal Dashboard (Web UI)
 
 
 Useful Links and Resources
