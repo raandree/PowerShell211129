@@ -121,6 +121,15 @@ Content for PowerShell Workshop 11/29/2021
     > Note: The cmdlets Get- /  Set-NTFSSecurityDescriptor let you do many   actions on a single security descriptor in  memory before writing it back to disk. This can  speed up you script quite a lot.
 
 -	Yaml
+
+  [Yaml](https://yaml.org/) provides less features as XML or JSON but is very easy to read also by non-IT professional. It stores like the other markup languages key-value pairs. It is very much used in the DevOps space.
+
+  The PowerShell module [powershell-yaml](https://www.powershellgallery.com/packages/powershell-yaml/0.4.2) is not the best implementation but does its job most of the part.
+
+  There is a [VSCode extensions for YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) which also checks the indentation of the content.
+
+  Sample data is provided in the file [SomeData.yml](Misc/Yaml.ps1).
+  
 - Pester
 -	Regular Expressions
 -	JEA

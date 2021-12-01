@@ -1,0 +1,21 @@
+Computers:
+  - AssetNumber: A001
+    CPU: Intel i9
+    Memory: 64 GB
+    GraphicCard: nVidia 3070 RTX
+    Disks:
+      - Size: 256GB
+        Type: SSD
+      - Size: 4TB
+        Type: SSD
+  - AssetNumber: A002
+    CPU: Intel i9
+    Memory: 64 GB
+    GraphicCard: nVidia 3070 RTX
+    Disks:
+      - Size: 256GB
+        Type: SSD
+      - Size: 12TB
+        Type: HDD
+      - Size: 12TB
+        Type: HDD
