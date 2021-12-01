@@ -82,12 +82,23 @@ Content for PowerShell Workshop 11/29/2021
   Demo script is [Splatting.ps1](./Misc/Splatting.ps1) which makes use of the function [Sync-Parameter](https://github.com/AutomatedLab/AutomatedLab.Common/blob/develop/AutomatedLab.Common/Common/Public/Sync-Parameter.ps1) which removes all parameters from the parameter hashtable that the target command does not have.
   > Note: You don't have to use the full module AutomatedLab.Common, just copy the functions or code parts needed for you projects.
 
--	RestApi
-  The cmdlet to interact with a Rest API is Invoke-RestMethod. We have created two examples, one simple for obtaining weather data and a more complex one for retrieving the artifact feeds from Azure DevOps. Links to the APIs are on the demo scripts:
-  - [GetWeatherData.ps1](./Misc/GetWeatherData.ps1)
-  - [GetAzureDevOpsFeed.ps1](./Misc/GetAzureDevOpsFeed.ps1)
+-	REST API
+
+    The cmdlet to interact with a Rest API is Invoke-RestMethod. We have created two examples, one simple for obtaining weather data and a more complex one for retrieving the artifact feeds from Azure DevOps. Links to the APIs are on the demo scripts:
+      - [GetWeatherData.ps1](./Misc/GetWeatherData.ps1)
+      - [GetAzureDevOpsFeed.ps1](./Misc/GetAzureDevOpsFeed.ps1)
+    
+    The script 'GetAzureDevOpsFeed.ps1' uses two different authentication methods and shows the complexity that comes with using access tokens in Rest API requests.
+
+    The following examples demonstrate how to use the NetApp ONTAP REST API based on [NetApp's documentation](https://library.netapp.com/ecmdocs/ECMLP2856304/html/index.html):
+    - https://community.netapp.com/t5/Software-Development-Kit-SDK-and-API-Discussions/SLM-PowerShell/td-p/133193
+    - https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/credentials-with-powershell/td-p/156757
+
+    When dealing with self-signed certificates, the script [OverwriteServerCertificateValidationCallback.ps1](./Misc/OverwriteServerCertificateValidationCallback.ps1)
+
+- DevOps
   
-  The script 'GetAzureDevOpsFeed.ps1' uses two different authentication methods and shows the complexity that comes with using access tokens in Rest API requests.
+    Brief discussion about what DevOps means and what it does not mean.   The whitepaper [The Release Pipeline Model](https://docs.microsoft. com/en-us/powershell/scripting/dsc/further-reading/whitepapers?  view=powershell-7.2) shows how a DevOps process may look like in the  Windows world.
 
 -	PSFramework
 -	NTFSSecurity
