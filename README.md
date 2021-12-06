@@ -43,8 +43,19 @@ Content for PowerShell Workshop 11/29/2021
     - Remote debugging works in the ISE by opening a script with the command ```psEdit``` in the remote machine within a interactive session. If the workflow to start the script remotely is more complex, you can use the cmdlet ```Wait-Debugger``` to halt the process and attache to it with ```Enter-PSHostProcess```. You need to know the process ID which is reflected by the variable ```$PID```.
   - Git Integration
     A simple Git implementation is built into VSCode by default. The extension [GitLense](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) additionally gives you a graphical file and commit history.
+
 - Coding best practices
   - The DSC Community's coding [style guideline](https://dsccommunity.org/styleguidelines/).
+  - Automatic versioning can be realized through [GitVersion](https://gitversion.net/). Based on the commit message GitVersion decides what the next version number will be. The configuration in a ```GitVersio.yml``` file may look like this:
+    ```yaml
+    next-version: 0.4.0
+    major-version-bump-message: '(breaking\schange|breaking|major)\b'
+    minor-version-bump-message: '(adds?|features?|minor)\b'
+    patch-version-bump-message: '\s?(fix|patch)'
+    no-bump-message: '\+semver:\s?(none|skip)'
+    ```
+
+  
 -	Advanced Functions
   Covered by going through content of [PowerShell training material](https://github.com/raandree/PowerShellTraining).
 
@@ -56,6 +67,8 @@ Content for PowerShell Workshop 11/29/2021
       - [ThreadJob](https://www.powershellgallery.com/packages/ThreadJob/2.0.3)
 
     Keep in mind that extending arrays can be quite expensive. A demo is in [Array - ArrayList Performance.ps1](./Misc/Array%20-%20ArrayList%20Performance.ps1)
+
+    Coding performance can be measured by a Profiler. For PowerShell, a quick search found the PowerShell module [Profiler](https://github.com/nohwnd/Profiler) which support profiling on script block level.
 
 - Remoting Performance
   
@@ -114,7 +127,7 @@ Content for PowerShell Workshop 11/29/2021
 
   [PSDefaultParameterValues](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_parameters_default_values?view=powershell-7.2): Help to remove redundancy in scripts (cmdlet calls and parameters). Shown in [PSDefaultParameterValues.ps1](Misc/PSDefaultParameterValues.ps1).
 
--	NTFSSecurity3
+-	NTFSSecurity
 
     Some demos how to use this module for   permission cleanup, backup / restore and  finding orphaned SIDs is in [NTFSSecurity.ps1] (Misc/NTFSSecurity.ps1).
 
@@ -131,8 +144,8 @@ Content for PowerShell Workshop 11/29/2021
     Sample data is provided in the file [SomeData.  yml](Misc/Yaml.ps1).
   
 - Pester
-
   
+    [Pester](https://pester.dev/) is a unit and integration testing Framework. It is already implemented when using the [Sampler](https://github.com/gaelcolas/Sampler) module templating solution.
 
 -	Regular Expressions
 
