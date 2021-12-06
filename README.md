@@ -4,6 +4,7 @@ Content for PowerShell Workshop 11/29/2021
 ## Agenda
 
 - Git
+
   - Requirements to get started:
     - Download git from https://git-scm.com/downloads
     - Create a repository on GitHub
@@ -22,7 +23,9 @@ Content for PowerShell Workshop 11/29/2021
   - Main features for PowerShell Developers is:
     - Repo to store and version your code
     - Artifact feed based on NuGet to publish scripts and modules.
+  
 - VSCode
+
   - **Keep in mind the ```F1``` shortcut which give you access to literally every command.**  
   - Extensions
     > Note: You can automatically install extensions into VSCode by calling ```code --install-extension <path>```
@@ -55,9 +58,9 @@ Content for PowerShell Workshop 11/29/2021
     no-bump-message: '\+semver:\s?(none|skip)'
     ```
 
-  
 -	Advanced Functions
-  Covered by going through content of [PowerShell training material](https://github.com/raandree/PowerShellTraining).
+
+    Covered by going through content of [PowerShell training material](https://github.com/raandree/PowerShellTraining).
 
 -	Local Performance
 
@@ -78,22 +81,25 @@ Content for PowerShell Workshop 11/29/2021
     > Note: The custom functions are  part of [AutomatedLab.Common]  (https://www.powershellgallery.com/ packages/AutomatedLab.Common/2.1.  223) but work independently (can  be copied into your own modules).
 
 - Remoting
-  The Double Hop issue is not caused by a security policy but by 'physical constraints'. The remote machine simply does not have any data that can be used for another authentication like a TGT or password. Hence, the remote logon can be considered as secure but in this case uncomfortable. Solutions to this issue are:
-  - Kerberos Unconstrained Delegation (not recommend, potentially unsafe)
-  - Kerberos Constrained Delegation (does not work with PowerShell Remoting)
-  - Resource Based Delegation
-  - CredSsp
+  
+    The Double Hop issue is not caused by a security policy but by 'physical constraints'. The remote machine simply does not have any data that can be used for another authentication like a TGT or password. Hence, the remote logon can be considered as secure but in this case uncomfortable. Solutions to this issue are:
+    - Kerberos Unconstrained Delegation (not recommend, potentially unsafe)
+    - Kerberos Constrained Delegation (does not work with PowerShell Remoting)
+    - Resource Based Delegation
+    - CredSsp
 
 - Comparing Object
-  PowerShell does not compare object, it doesn't even know how to do this. PowerShell just calls the Equal method on an object and delegated the comparison to the object / class. Demo of this is in [Compare Object CSharp Operator Definition.ps1](./Misc/Compare%20Object%20CSharp%20Operator%20Definition.ps1).
 
-  The FileInfo class does not have the equal operator implemented, hence comparing [FileInfo class](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileinfo?view=net-6.0) object always returns false unless it is exactly the same object. In this case we do a reference-equal. The [DateTime struct](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-6.0) does have a bunch of operator and comparing two DateTime objects work by comparing their number of ticks.
+    PowerShell does not compare object, it doesn't even know how to do this. PowerShell just calls the Equal method on an object and delegated the comparison to the object / class. Demo of this is in [Compare Object CSharp Operator Definition.ps1](./Misc/Compare%20Object%20CSharp%20Operator%20Definition.ps1).
+
+    The FileInfo class does not have the equal operator implemented, hence comparing [FileInfo class](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileinfo?view=net-6.0) object always returns false unless it is exactly the same object. In this case we do a reference-equal. The [DateTime struct](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-6.0) does have a bunch of operator and comparing two DateTime objects work by comparing their number of ticks.
 
 - Spatting
-  One of the most helpful PowerShell language features to handle parameters in cmdlet calls if things get complex and thus complicated. More information on [Splattingand Hashtables](https://powershellexplained.com/2016-11-06-powershell-hashtable-everything-you-wanted-to-know-about/#splatting-hashtables-at-cmdlets).
+  
+    One of the most helpful PowerShell language features to handle parameters in cmdlet calls if things get complex and thus complicated. More information on [Splattingand Hashtables](https://powershellexplained.com/2016-11-06-powershell-hashtable-everything-you-wanted-to-know-about/#splatting-hashtables-at-cmdlets).
 
-  Demo script is [Splatting.ps1](./Misc/Splatting.ps1) which makes use of the function [Sync-Parameter](https://github.com/AutomatedLab/AutomatedLab.Common/blob/develop/AutomatedLab.Common/Common/Public/Sync-Parameter.ps1) which removes all parameters from the parameter hashtable that the target command does not have.
-  > Note: You don't have to use the full module AutomatedLab.Common, just copy the functions or code parts needed for you projects.
+    Demo script is [Splatting.ps1](./Misc/Splatting.ps1) which makes use of the function [Sync-Parameter](https://github.com/AutomatedLab/AutomatedLab.Common/blob/develop/AutomatedLab.Common/Common/Public/Sync-Parameter.ps1) which removes all parameters from the parameter hashtable that the target command does not have.
+    > Note: You don't have to use the full module AutomatedLab.Common, just copy the functions or code parts needed for you projects.
 
 -	REST API
 
@@ -121,11 +127,11 @@ Content for PowerShell Workshop 11/29/2021
 
 -	PSFramework
 
-    The most interesting features of [PSFramework]  (https://psframework.org/) are managing   configuration data for modules or the   PowerShell environment in general and a very  sophisticated logging engine. A demo of the  logging features in in [PSFramework Logging.ps1] (Misc/PSFramework%20Logging.ps1)
+    The most interesting features of [PSFramework]  (https://psframework.org/) are managing   configuration data for modules or the   PowerShell environment in general and a very  sophisticated logging engine. A demo of the  logging features in in [PSFramework Logging.ps1](Misc/PSFramework%20Logging.ps1)
 
 - Miscellaneous
 
-  [PSDefaultParameterValues](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_parameters_default_values?view=powershell-7.2): Help to remove redundancy in scripts (cmdlet calls and parameters). Shown in [PSDefaultParameterValues.ps1](Misc/PSDefaultParameterValues.ps1).
+    [PSDefaultParameterValues](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell. core/about/about_parameters_default_values?view=powershell-7.2): Help to remove redundancy in scripts  (cmdlet calls and parameters). Shown in [PSDefaultParameterValues.ps1](Misc/PSDefaultParameterValues.ps1).
 
 -	NTFSSecurity
 
@@ -137,11 +143,11 @@ Content for PowerShell Workshop 11/29/2021
 
     [Yaml](https://yaml.org/) provides less   features as XML or JSON but is very easy to   read also by non-IT professional. It stores   like the other markup languages key-value   pairs. It is very much used in the DevOps space.
 
-    The PowerShell module [powershell-yaml](https://  www.powershellgallery.com/packages/ powershell-yaml/0.4.2) is not the best   implementation but does its job most of the   part.
+    The PowerShell module [powershell-yaml](https://www.powershellgallery.com/packages/powershell-yaml/0.4.2) is not the best   implementation but does its job most of the   part.
 
-    There is a [VSCode extensions for YAML](https://  marketplace.visualstudio.com/items? itemName=redhat.vscode-yaml) which also checks   the indentation of the content.
+    There is a [VSCode extensions for YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) which also checks   the indentation of the content.
 
-    Sample data is provided in the file [SomeData.  yml](Misc/Yaml.ps1).
+    Sample data is provided in the file [SomeData.yml](Misc/Yaml.ps1).
   
 - Pester
   
